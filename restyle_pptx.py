@@ -81,7 +81,7 @@ def restyle():
                 updated = build_slide_rels_xml(original, LINKEDIN_BLANK_LAYOUT)
                 # Prepend XML declaration to match original format
                 updated_with_decl = (
-                    "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n"
+                    '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
                     + updated
                 )
                 out_zip.writestr(item, updated_with_decl.encode("utf-8"))
